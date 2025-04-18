@@ -4,7 +4,7 @@ function $$(selector, context = document) {
     return Array.from(context.querySelector(selector));
 }
 
-const BASE_PATH = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? '/' :'/website';
+const BASE_PATH = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? '/' :'https://m3lvinzz.github.io/DSC-106-portfolio/';
 
 let pages = [
     {url: '', title: 'Home'},
