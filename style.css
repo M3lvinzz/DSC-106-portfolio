@@ -1,6 +1,7 @@
 html {
   --color-accent: oklch(70% 520% 330);
   accent-color: var(--color-accent);
+  color-scheme: light dark;
 }
 
 body {
@@ -8,14 +9,25 @@ body {
   max-width: 100ch;
   margin-inline: auto;  
   padding: 5ch;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 
+}
+
+.color-scheme {
+  font-size: 80%;
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 nav {
 
+  --border-color: oklch(50% 10% 200 / 40%);
+  --background-color: oklch(from var(--color-accent) 95% 5% h);
   display: flex;
   margin-bottom: 5ch;
+  border-bottom-color: var(--border-color);
 
   ul {
     display: contents;
@@ -25,7 +37,7 @@ nav {
     display: contents;
   }
 
-  .current {
+  a {
     flex: 1;
     text-decoration: none;
     color: inherit;
@@ -33,9 +45,9 @@ nav {
     padding: 0.5em;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: var(--border-color);
   }
-  .home {
+  .current {
     border-bottom-width: 0.4em;
     border-bottom-color: oklch(60% 3% 200);
     padding-bottom: 0.1em;
@@ -44,7 +56,7 @@ nav {
     border-bottom-width: 0.4em;
     border-bottom-color: var(--color-accent);
     padding-bottom: 0.2em;
-    background-color: oklch(from var(--color-accent) 75% 20% h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 
   }
 }
@@ -54,7 +66,7 @@ form {
   grid-template-columns: auto 1fr;
 }
 
-input, textarea, button {
+input, textarea, button, select{
   font: inherit;
   display: block;
   width: 100%;
