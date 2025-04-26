@@ -1,0 +1,75 @@
+[
+    {
+      "title": "League of Legends Predictive Model",
+      "year": 2025,
+      "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+      "description": "Used a dataset on 2024 Esports data to create a website showcasing a report on the impact of void grubs on win rate and player statistics. Showed hypothesis testing and data visualizations of interesting statistics utilizing Plotly.express. The model was made using a Random Forest Classifier utilizing Scikit-Learn and has around an 88.7% accuracy for predicting winrate"
+    },
+    {
+      "title": "Video Game Review Genre Classifier",
+      "year": 2025,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Ulitized a Naive Bayes Classifier using Scikit-Learn to classify the genre of a video game based on its review. Created a web app utilizing Streamlit to allow users to try out the trained model. Created for the two day 2025 DataHacks Hackathon"
+    },
+    {
+        "title": "Monty Carlo TS AI Bot for StarChess",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created a chess AI for a altered version of chess called Starchess. Utilized OpenAI gym and pytorch neural netoworks to create a Monty Carlo Tree Search AI tha competed against other participant's bots. This bot won second place in the 2025 StarChessAI competition."
+      },
+    {
+      "title": "Dino Dash",
+      "year": 2025,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Utilized Pygame to create a twist on the classic chrome dino game. Added updated graphics and sound effects to enhance user experience and added a boss monster at the end of the story mode. Created for the 2025 Tritonware game jam for VGDC"
+    },
+    {
+      "title": "Ducimus excepturi doloremque odio.",
+      "year": 2023,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Adipisci odio sed, perferendis nesciunt, eligendi, repellendus totam cumque voluptate rerum aperiam assumenda suscipit quae itaque nihil qui similique veritatis dolores tenetur nulla a facere blanditiis iste molestias. Nulla, blanditiis?"
+    },
+    {
+      "title": "Harum vel modi quod.",
+      "year": 2024,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Praesentium enim quas nulla? Ab quaerat deleniti natus eius, dolore labore veniam excepturi nulla perferendis. Quam, quos, quisquam nostrum ea unde et suscipit eum voluptates iure, incidunt nihil corrupti accusantium."
+    },
+    {
+      "title": "Nesciunt temporibus voluptatem aperiam!",
+      "year": 2023,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Numquam unde commodi quam hic tempora distinctio amet deleniti quo itaque quos architecto qui ipsam earum ad voluptatum sapiente, voluptates esse enim id eveniet necessitatibus. Iusto alias eius cumque porro."
+    },
+    {
+      "title": "Quo itaque natus dicta.",
+      "year": 2021,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Voluptates voluptatem, quasi distinctio a, possimus laboriosam earum ea quidem veniam, sequi quod voluptas praesentium doloribus eum molestias. Nam hic quidem, autem eaque sapiente beatae cum rerum dolores blanditiis vitae!"
+    },
+    {
+      "title": "Quidem similique repellat laborum.",
+      "year": 2020,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Doloremque itaque voluptates omnis odio laborum perspiciatis fuga similique ex. Quia non ut aut voluptas cupiditate pariatur, voluptates assumenda reiciendis repudiandae, ab ratione quaerat. Neque voluptas molestiae aspernatur fugit est."
+    },
+    {
+      "title": "Distinctio enim autem dolorum?",
+      "year": 2025,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Deserunt magni, commodi eius eligendi ab voluptates quaerat tempore quo ut delectus quibusdam labore cumque eaque praesentium reiciendis quos aspernatur consectetur omnis pariatur ipsa laborum iure officia! Officia, vel incidunt."
+    },
+    {
+      "title": "Accusamus quasi quisquam deleniti.",
+      "year": 2022,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Ullam vitae non omnis ut molestiae, asperiores voluptates a, laboriosam sapiente dolores aliquid, consectetur maiores! Asperiores repellendus accusamus, atque voluptas itaque incidunt exercitationem tempora repudiandae mollitia perspiciatis officia, provident voluptatem?"
+    },
+    {
+      "title": "Quis praesentium minus omnis.",
+      "year": 2024,
+      "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+      "description": "Eos eveniet quo, repellat deserunt mollitia sapiente magni ab, dolorem saepe aperiam ex eligendi in laborum dolores repellendus animi totam quas minima modi perspiciatis sint. Quos non maxime in? Qui!"
+    }
+  ]
+  

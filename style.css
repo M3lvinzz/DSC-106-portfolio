@@ -173,3 +173,25 @@ h2 {
   }
 }
 
+#profile-stats {
+
+  dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  dt {
+    grid-row: 1;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  dd {
+    grid-row: 2;
+    font-weight: normal;
+    text-align: center;
+  }
+}
