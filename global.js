@@ -119,9 +119,19 @@ export async function fetchJSON(url) {
       const description = document.createElement('p');
       description.textContent = projects[i].description;
   
+      const year = document.createElement('p');
+      year.classList.add('year');
+      year.textContent = `c. ${projects[i].year}`;
+
+      const infoWrapper = document.createElement('div');
+      infoWrapper.appendChild(description);
+      infoWrapper.appendChild(year);
+
       article.appendChild(heading);
       article.appendChild(img);
-      article.appendChild(description);
+      // article.appendChild(description);
+      // article.appendChild(year);
+      article.appendChild(infoWrapper);
   
       containerElement.appendChild(article);
     }

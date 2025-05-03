@@ -99,6 +99,72 @@ label {
   h1 {
     font-size: 4em;
   }
+
+  .year {
+    font-variant-numeric: oldstyle-nums;
+    color: #444;
+  }
+}
+
+.container {
+  display : grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 3em;
+
+  #projects-plot {
+    max-width: 20em;
+    margin-block: 2em;
+  
+    overflow: visible;
+  }
+  
+  &:has(path:hover) {
+    path:not(:hover) {
+      opacity: 0.5;
+    }
+  }
+  path {
+    transition: 300ms;
+  }
+  .selected {
+    --color: oklch(60% 45% 0) !important;
+  
+    &:is(path) {
+      fill: var(--color);
+    }
+  }
+  
+  .legend {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1em;
+    border: 1px solid gray;
+    padding: 0.4em;
+    margin: 1.5em 0;
+    justify-content: space-between;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  
+    border: 1px solid system-ui;
+    padding: 0.5em 0.75em;
+    border-radius: 4px;
+  }
+    .swatch {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: var(--color);
+    border-radius: 3px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
