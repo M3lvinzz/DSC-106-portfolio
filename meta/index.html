@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meta</title>
+    <script src="main.js" type="module"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../global.js" type="module"></script>
+  </head>
+  <body>
+    <h2>Commits by time of day</h2>
+    <dl id="commit-tooltip" class="info tooltip" hidden>
+      <dt>Commit</dt>
+      <dd>
+        <a href="" id="commit-link" target="_blank"></a>
+      </dd>
+
+      <dt>Date</dt>
+      <dd id="commit-date"></dd>
+    </dl>
+    <div id="chart"></div>
+    <dl id="language-breakdown" class="stats"></dl>
+    <p id="selection-count">No commits selected</p>
+    <div id="stats"></div>
+  </body>
+</html>

@@ -7,10 +7,9 @@ html {
 body {
   font: 100%/1.5 system-ui;
   max-width: 100ch;
-  margin-inline: auto;  
+  margin-inline: auto;
   padding: 5ch;
   /* background-color: lightblue; */
-
 }
 
 .color-scheme {
@@ -22,7 +21,6 @@ body {
 }
 
 nav {
-
   --border-color: oklch(50% 10% 200 / 40%);
   --background-color: oklch(from var(--color-accent) 95% 5% h);
   display: flex;
@@ -57,7 +55,6 @@ nav {
     border-bottom-color: var(--color-accent);
     padding-bottom: 0.2em;
     background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
-
   }
 }
 
@@ -66,7 +63,10 @@ form {
   grid-template-columns: auto 1fr;
 }
 
-input, textarea, button, select{
+input,
+textarea,
+button,
+select {
   font: inherit;
   display: block;
   width: 100%;
@@ -107,17 +107,17 @@ label {
 }
 
 .container {
-  display : grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 3em;
 
   #projects-plot {
     max-width: 20em;
     margin-block: 2em;
-  
+
     overflow: visible;
   }
-  
+
   &:has(path:hover) {
     path:not(:hover) {
       opacity: 0.5;
@@ -128,17 +128,17 @@ label {
   }
   .selected {
     --color: oklch(60% 45% 0) !important;
-  
+
     &:is(path) {
       fill: var(--color);
     }
   }
-  
+
   .legend {
     list-style: none;
     padding: 0;
     margin: 1em 0;
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     gap: 1em;
     border: 1px solid gray;
@@ -146,17 +146,17 @@ label {
     margin: 1.5em 0;
     justify-content: space-between;
   }
-  
+
   .legend-item {
     display: flex;
     align-items: center;
     gap: 0.5em;
-  
+
     border: 1px solid system-ui;
     padding: 0.5em 0.75em;
     border-radius: 4px;
   }
-    .swatch {
+  .swatch {
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -167,7 +167,12 @@ label {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.1;
   text-wrap: balance;
 }
@@ -189,7 +194,7 @@ h2 {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 2em; /* Adjust gap between sections */
-  
+
   b {
     font-weight: bold;
     color: purple;
@@ -200,26 +205,25 @@ h2 {
     padding: 1.5em;
     border-bottom: 2px solid #ccc; /* Optional: adds border between sections */
   }
-  
+
   .center_align {
     text-align: center;
   }
-  
-  
+
   ul {
     list-style-type: square;
     padding-left: 0;
   }
-  
+
   ul li {
     margin-left: 2em; /* Adds some indentation */
   }
-  
+
   .right_align {
     float: right;
     text-align: right;
   }
-  
+
   .org-link:hover {
     text-decoration: underline;
     color: darkgreen;
@@ -240,7 +244,6 @@ h2 {
 }
 
 #profile-stats {
-
   dl {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -248,13 +251,13 @@ h2 {
     padding: 2rem;
     font-size: 1.5rem;
   }
-  
+
   dt {
     grid-row: 1;
     font-weight: bold;
     text-align: left;
   }
-  
+
   dd {
     grid-row: 2;
     font-weight: normal;
