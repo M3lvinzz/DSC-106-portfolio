@@ -3,8 +3,8 @@
   text-align: left;
   font-size: 2.2em;
   font-weight: bold;
-  color: #6a0dad; 
-  margin-left: 20px; 
+  color: #6a0dad;
+  margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 25px;
 }
@@ -12,7 +12,7 @@
 #stats {
   font-family: Arial, sans-serif;
   margin: 20px auto;
-  padding: 0 10px; 
+  padding: 0 10px;
   max-width: 900px;
   background-color: #fff;
 }
@@ -61,13 +61,14 @@
 dl.info {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 0.3em 0.75em;         
-  margin: 0;                 
-  padding: 0.5em;            
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; 
-  line-height: 1.4; 
+  gap: 0.3em 0.75em;
+  margin: 0;
+  padding: 0.5em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.4;
   transition-duration: 500ms;
-  transition-property: opacity, visibility;        
+  transition-property: opacity, visibility;
 }
 dl.info[hidden]:not(:hover, :focus-within) {
   opacity: 0;
@@ -75,14 +76,15 @@ dl.info[hidden]:not(:hover, :focus-within) {
 }
 .tooltip {
   position: fixed;
-  top: 1em;       
-  left: 1em;       
-  z-index: 1000;  
+  top: 1em;
+  left: 1em;
+  z-index: 1000;
   background-color: white;
-  border: 1px solid #e2e8f0; 
-  border-radius: 0.375rem; 
-  padding: 0.75em 1em;   
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  padding: 0.75em 1em;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
   max-width: 350px;
 }
 
@@ -90,6 +92,10 @@ circle {
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
+
+  @starting-style {
+    r: 0;
+  }
 }
 circle {
   fill: steelblue;
@@ -101,4 +107,151 @@ circle:hover {
 
 circle.selected {
   fill: #ff6b6b;
+}
+
+.commit-container {
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  padding-bottom: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label[for="commit-progress"] {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+input[type="range"].slider {
+  flex-grow: 1;
+}
+
+#commit-time {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* #files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+  }
+
+  dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.6em;
+    margin-left: 0;
+  }
+}
+
+.loc {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 2px;
+  background: var(--clr, steelblue);
+}
+
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
+} */
+
+dl.info {
+  /* ... other styles ... */
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+div#time-slide {
+  flex: 1;
+  align-items: baseline;
+}
+
+time#commit-time {
+  margin-left: auto;
+}
+
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+  }
+
+  dd {
+    grid-column: 2;
+  }
+}
+
+.loc {
+  /* display: flex; */ /* This is not strictly necessary if .loc contains no children */
+  width: 0.5em;
+  aspect-ratio: 1; /* Creates a square that becomes a circle with border-radius */
+  /* MODIFIED LINE: Use the --color CSS variable set by JavaScript.
+     Fallback to 'steelblue' if --color is not defined for some reason. */
+  background: var(--color, steelblue);
+  border-radius: 50%; /* Makes the div a circle */
+  /* margin-right: 2px; */ /* Optional: gap on parent dd should handle spacing */
+}
+
+dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
 }
